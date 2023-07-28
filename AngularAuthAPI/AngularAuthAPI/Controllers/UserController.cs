@@ -35,7 +35,7 @@ namespace AngularAuthAPI.Controllers
                 Message = "Login Success!"
             });
         }
-        [HttpPost("Register")]
+        [HttpPost("register")]
         public async Task<IActionResult> RegisterUser([FromBody] User userObj)
         {
             if (userObj == null)
